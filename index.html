@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA Video</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>NOVA</h1>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Cari video..."
+        >
+    </header>
+
+
+    <!-- PEMUTAR VIDEO -->
+
+    <section id="player">
+
+        <video id="videoPlayer" controls>
+            <source src="videos/video1.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video.
+        </video>
+
+        <h2 id="videoTitle">Pilih video</h2>
+
+        <p>NOVA Channel</p>
+
+    </section>
+
+
+    <!-- DAFTAR VIDEO -->
+
+    <main id="video-list">
+
+        <div
+            class="video-card"
+            onclick="putarVideo('Video Pertama')"
+        >
+
+            <div class="thumbnail">
+                ▶
+            </div>
+
+            <h2>Video Pertama</h2>
+
+            <p>NOVA Channel • 1,2K views</p>
+
+        </div>
+
+
+        <div
+            class="video-card"
+            onclick="putarVideo('Belajar Coding Python')"
+        >
+
+            <div class="thumbnail">
+                ▶
+            </div>
+
+            <h2>Belajar Coding Python</h2>
+
+            <p>Programming • 850 views</p>
+
+        </div>
+
+
+        <div
+            class="video-card"
+            onclick="putarVideo('Belajar Cybersecurity')"
+        >
+
+            <div class="thumbnail">
+                ▶
+            </div>
+
+            <h2>Belajar Cybersecurity</h2>
+
+            <p>Cyber Academy • 2,1K views</p>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
